@@ -1,0 +1,18 @@
+@import url('line-awesome/dist/line-awesome/css/line-awesome.min.css');
+
+vaadin-app-layout::part(drawer) {
+  width: 12%;
+}
+
+vaadin-button {
+    --lumo-border-radius-m: 1em;
+}
+
+vaadin-anchor {
+  width: 200px;
+  margin-left: 20px;
+}
+
+ h1 {
+    margin-top: 0;
+}
