@@ -13,7 +13,7 @@ Importing OpenAPI files is supported by Postman but this is a lot better because
 
 ## Contribute
 
-Try it our and let me know if it works for you. Contributions, questions and feedback are welcome.
+Try it out and let me know if it works for you. Contributions, questions and feedback are welcome.
 
 
 
