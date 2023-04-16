@@ -1,0 +1,10 @@
+.idea
+.mvn
+.vscode
+node_modules
+frontend
+src
+
+fly.toml
+
+target

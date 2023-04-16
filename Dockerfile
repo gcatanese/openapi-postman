@@ -2,7 +2,7 @@ FROM openjdk:17-jdk-slim
 
 RUN mkdir -p /software
 
-ADD target/openapi-postman.jar /software/openapi-postman.jar
+ADD dist/openapi-postman.jar /software/openapi-postman.jar
 
 EXPOSE 8080
 
