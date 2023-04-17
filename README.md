@@ -2,6 +2,8 @@
 
 Convert an OpenAPI file into a Postman collection [v2.1](https://schema.postman.com/collection/json/v2.1.0/draft-07/collection.json).
 
+https://openapi-lab.fly.dev/
+
 ## Why
 
 Importing OpenAPI files is supported by Postman but this is a lot better because:
