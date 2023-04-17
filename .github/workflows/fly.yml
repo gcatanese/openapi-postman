@@ -1,0 +1,21 @@
+name: Deploy to fly.io
+on:
+  workflow_dispatch
+jobs:
+  deploy:
+    name: Deploy proxy
+    runs-on: ubuntu-latest
+    steps:
+      # Repo checkout
+      - uses: actions/checkout@v2
+      - name: Set up JDK 17
+        uses: actions/setup-java@v1
+        with:
+          java-version: 17
+      - name: Build with Maven
+        run: mvn clean package -Pproduction
+      # Deploy to Fly.io
+      - uses: superfly/flyctl-actions/setup-flyctl@master
+      - run: flyctl deploy --app openapi-lab --remote-only
+        env:
+          FLY_API_TOKEN: ${{ secrets.FLY_API_TOKEN }}
