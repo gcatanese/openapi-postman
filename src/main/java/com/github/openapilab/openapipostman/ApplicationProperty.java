@@ -9,10 +9,10 @@ public class ApplicationProperty {
     @Value("${ROOT_FOLDER:#{null}}")
     private String rootFolder;
 
-    @Value("${recaptcha.site-key}")
+    @Value("${RECAPTCHA_SITE_KEY}")
     private String recaptchaSiteKey;
 
-    @Value("${recaptcha.secret-key}")
+    @Value("${RECAPTCHA_SECRET_KEY}")
     private String recaptchaSecretKey;
 
     public String getRootFolder() {
