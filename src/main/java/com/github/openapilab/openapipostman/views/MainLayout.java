@@ -4,6 +4,7 @@ import com.vaadin.flow.component.applayout.AppLayout;
 import com.vaadin.flow.component.applayout.DrawerToggle;
 import com.vaadin.flow.component.html.Anchor;
 import com.vaadin.flow.component.html.H1;
+import com.vaadin.flow.component.html.Hr;
 import com.vaadin.flow.component.orderedlayout.FlexComponent;
 import com.vaadin.flow.component.orderedlayout.HorizontalLayout;
 import com.vaadin.flow.component.orderedlayout.VerticalLayout;
@@ -39,9 +40,11 @@ public class MainLayout extends AppLayout {
         urlMenu.getElement().setAttribute("router-ignore", "");
         Anchor urlRawText = new Anchor("/rawtext", "From raw text");
         urlRawText.getElement().setAttribute("router-ignore", "");
+        Anchor info = new Anchor("/info", "About");
         addToDrawer(new VerticalLayout(
-                urlMenu, urlRawText
+                urlMenu, urlRawText, new Hr(), info
         ));
+
         setDrawerOpened(false);
     }
 }
