@@ -1,5 +1,6 @@
 package com.github.openapilab.openapipostman.views;
 
+import com.vaadin.flow.component.Html;
 import com.vaadin.flow.component.html.*;
 import com.vaadin.flow.component.orderedlayout.HorizontalLayout;
 import com.vaadin.flow.component.orderedlayout.VerticalLayout;
@@ -26,10 +27,11 @@ public class InfoView extends VerticalLayout {
         layout.setPadding(false);
 
         H2 title = new H2("Convert OpenAPI files into Postman collections");
+        add(title);
 
         Paragraph p = new Paragraph();
-
         p.setText("Importing OpenAPI files is supported by Postman but this is a lot better because:");
+
         UnorderedList unorderedList = new UnorderedList(
                 new ListItem("convert path variables into Postman variables"),
                 new ListItem("convert placeholders (i.e. {{MY_VAR}}) found in OpenAPI examples into Postman variables"),
@@ -39,8 +41,14 @@ public class InfoView extends VerticalLayout {
         );
         p.add(unorderedList);
 
-        add(title);
         add(p);
+
+        add(new Hr());
+
+        Html html = new Html("<p>This website uses <a href=\"https://analytics.google.com/analytics/web/#/\">Google Analytics</a> " +
+                "and <a href=\"https://www.google.com/recaptcha/about/\">Google reCAPTCHA</a>" +
+                "</p>");
+        add(html);
 
     }
 }
