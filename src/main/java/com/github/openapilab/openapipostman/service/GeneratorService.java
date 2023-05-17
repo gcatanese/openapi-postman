@@ -21,7 +21,7 @@ public class GeneratorService {
     public String generate(String specfile) throws Exception {
 
         final CodegenConfigurator configurator = new CodegenConfigurator()
-                .setGeneratorName("postman-v2")
+                .setGeneratorName("postman-collection")
                 .setInputSpec(specfile)
                 .setOutputDir(getPath(specfile));
 
