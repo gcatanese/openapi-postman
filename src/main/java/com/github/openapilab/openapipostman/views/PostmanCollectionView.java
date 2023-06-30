@@ -4,6 +4,7 @@ import com.github.openapilab.openapipostman.service.FileService;
 import com.github.openapilab.openapipostman.service.JsonService;
 import com.vaadin.flow.component.button.Button;
 import com.vaadin.flow.component.button.ButtonVariant;
+import com.vaadin.flow.component.html.Div;
 import com.vaadin.flow.component.icon.Icon;
 import com.vaadin.flow.component.icon.VaadinIcon;
 import com.vaadin.flow.component.orderedlayout.HorizontalLayout;
@@ -75,7 +76,19 @@ public class PostmanCollectionView extends VerticalLayout {
         buttonLayout.setJustifyContentMode(JustifyContentMode.END);
         buttonLayout.add(buttonWrapper);
 
+        HorizontalLayout textAreaHeading = new HorizontalLayout();
+        textAreaHeading.setWidthFull();
+        textAreaHeading.setJustifyContentMode(JustifyContentMode.CENTER);
+        textAreaHeading.setPadding(false);
+        textAreaHeading.setSpacing(false);
+
+        Div postmanJsonTitle = new Div();
+        postmanJsonTitle.getElement().getStyle().set("font-size", "14px");
+        postmanJsonTitle.setText("postman.json");
+        textAreaHeading.add(postmanJsonTitle);
+        
         layout.add(buttonLayout);
+        layout.add(textAreaHeading);
         layout.add(textArea);
 
         Icon homeIcon = VaadinIcon.HOME.create();
