@@ -19,4 +19,12 @@ public class OpenApiSpec {
     public void setRaw(String raw) {
         this.raw = raw;
     }
+
+    @Override
+    public String toString() {
+        return "OpenApiSpec[" +
+                "url: " + this.url +
+                " ,raw: " + this.raw +
+                "]";
+    }
 }
