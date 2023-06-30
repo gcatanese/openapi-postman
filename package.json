@@ -110,7 +110,7 @@
     "lit": "2.7.5"
   },
   "devDependencies": {
-    "@rollup/plugin-replace": "3.1.0",
+    "@rollup/plugin-replace": "5.0.2",
     "@rollup/pluginutils": "4.2.1",
     "async": "3.2.4",
     "glob": "7.2.3",
