@@ -86,7 +86,7 @@ public class PostmanCollectionView extends VerticalLayout {
         postmanJsonTitle.getElement().getStyle().set("font-size", "14px");
         postmanJsonTitle.setText("postman.json");
         textAreaHeading.add(postmanJsonTitle);
-        
+
         layout.add(buttonLayout);
         layout.add(textAreaHeading);
         layout.add(textArea);
