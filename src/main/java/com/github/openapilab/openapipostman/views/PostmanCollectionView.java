@@ -71,9 +71,9 @@ public class PostmanCollectionView extends VerticalLayout {
 
         Button downloadButton = new Button("Save", downloadIcon);
         downloadButton.addThemeVariants(ButtonVariant.LUMO_SMALL);
-        FileDownloadWrapper buttonWrapper = new FileDownloadWrapper(
+        FileDownloadWrapper fileDownloadWrapper = new FileDownloadWrapper(
                 new StreamResource("postman.json", () -> new ByteArrayInputStream(textArea.getValue().getBytes())));
-        buttonWrapper.wrapComponent(downloadButton);
+        fileDownloadWrapper.wrapComponent(downloadButton);
 
         // Push button
         Icon pushIcon = VaadinIcon.SHARE.create();
@@ -91,7 +91,7 @@ public class PostmanCollectionView extends VerticalLayout {
         HorizontalLayout buttonLayout = new HorizontalLayout(clipboardHelper);
         buttonLayout.setWidthFull();
         buttonLayout.setJustifyContentMode(JustifyContentMode.END);
-        buttonLayout.add(buttonWrapper);
+        buttonLayout.add(fileDownloadWrapper);
         buttonLayout.add(pushButton);
 
         HorizontalLayout textAreaHeading = new HorizontalLayout();
