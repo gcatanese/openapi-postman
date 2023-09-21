@@ -33,7 +33,6 @@ public class InfoView extends VerticalLayout {
         p.setText("Importing OpenAPI files is supported by Postman but this is a lot better because:");
 
         UnorderedList unorderedList = new UnorderedList(
-                new ListItem("convert path variables into Postman variables"),
                 new ListItem("convert placeholders (i.e. {{MY_VAR}}) found in OpenAPI examples into Postman variables"),
                 new ListItem(("create a Postman request for each OpenAPI (request) example: multiple examples generates different requests for the same endpoint")),
                 new ListItem("define the preferred authorisation method (basic auth, API key)"),
