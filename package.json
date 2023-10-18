@@ -119,7 +119,7 @@
     "strip-css-comments": "5.0.0",
     "transform-ast": "2.4.4",
     "typescript": "4.9.5",
-    "vite": "3.2.7",
+    "vite": "4.5.0",
     "vite-plugin-checker": "0.6.1",
     "workbox-build": "6.6.0",
     "workbox-core": "6.6.0",
