@@ -73,11 +73,9 @@ public class UrlView extends GeneratorView {
         formLayout.setColspan(textField, 2);
         formLayout.setColspan(buttonLayout, 2);
 
-        ReCaptcha reCaptcha = initReCaptcha();
         HorizontalLayout captchaLayout = new HorizontalLayout();
         captchaLayout.setWidthFull();
         captchaLayout.setJustifyContentMode(JustifyContentMode.END);
-        captchaLayout.add(reCaptcha);
 
         submit.addClickListener( e -> {
 
@@ -86,11 +84,6 @@ public class UrlView extends GeneratorView {
                 binder.writeBean(openApiSpec);
 
                 if(openApiSpec.getUrl() != null && !openApiSpec.getUrl().trim().isBlank()) {
-
-                    if(!reCaptcha.isValid()) {
-                        LOGGER.warn("Invalid reCaptcha challenge");
-                        throw new BaseException("Invalid reCaptcha challenge: please try again");
-                    }
 
                     String content = urlService.fetchUrl(openApiSpec.getUrl());
                     openApiSpec.setRaw(content);

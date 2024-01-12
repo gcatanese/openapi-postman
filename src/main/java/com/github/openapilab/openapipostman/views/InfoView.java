@@ -1,6 +1,5 @@
 package com.github.openapilab.openapipostman.views;
 
-import com.vaadin.flow.component.Html;
 import com.vaadin.flow.component.html.*;
 import com.vaadin.flow.component.orderedlayout.HorizontalLayout;
 import com.vaadin.flow.component.orderedlayout.VerticalLayout;
@@ -41,13 +40,6 @@ public class InfoView extends VerticalLayout {
         p.add(unorderedList);
 
         add(p);
-
-        add(new Hr());
-
-        Html html = new Html("<p>This website uses <a href=\"https://analytics.google.com/analytics/web/#/\">Google Analytics</a> " +
-                "and <a href=\"https://www.google.com/recaptcha/about/\">Google reCAPTCHA</a>" +
-                "</p>");
-        add(html);
 
     }
 }

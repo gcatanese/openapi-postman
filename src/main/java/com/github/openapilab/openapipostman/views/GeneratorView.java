@@ -84,14 +84,6 @@ public abstract class GeneratorView extends VerticalLayout {
         return notification;
     }
 
-    protected ReCaptcha initReCaptcha() {
-        return new ReCaptcha(
-                applicationProperty.getRecaptchaSiteKey(),
-                applicationProperty.getRecaptchaSecretKey()
-        );
-    }
-
-
     protected Component footer() {
         Div footer = new Div();
         footer.getElement().getStyle().set("font-size", "14px");
