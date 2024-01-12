@@ -1,0 +1,18 @@
+tasks:
+  - name: backend
+    before: |
+      sdk install java 17.0.4.1-tem < /dev/null
+    command: |
+      ./mvnw spring-boot:run
+      echo App is running
+
+ports:
+  - name: OpenAPI Postman
+    port: 8080
+    visibility: public
+    onOpen: open-preview
+
+vscode:
+  extensions:
+    - pivotal.vscode-spring-boot
+    - vscjava.vscode-java-pack
