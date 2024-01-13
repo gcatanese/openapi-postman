@@ -2,7 +2,15 @@
 
 Convert an OpenAPI file into a Postman collection [v2.1](https://schema.postman.com/collection/json/v2.1.0/draft-07/collection.json).
 
-https://openapi-lab.fly.dev/
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/gcatanese/openapi-postman/tree/main)
+
+## Run locally
+
+```
+git clone https://github.com/gcatanese/openapi-postman.git
+cd openapi-postman
+./mvnw spring-boot:run
+```
 
 ## Why
 
