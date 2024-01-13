@@ -8,7 +8,7 @@ Web application that generates a Postman collection (in JSON format) from an Ope
 You can paste the content of the OpenAPI file or enter the URL.  
 
 Made with ❤️, [OpenAPI Generator](https://github.com/OpenAPITools/openapi-generator) and [Vaadin](https://vaadin.com/).   
-    
+<br/>
 
 ![Homepage](homepage.png)
 
