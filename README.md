@@ -4,6 +4,13 @@ Convert an OpenAPI file into a Postman collection [v2.1](https://schema.postman.
 
 [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/gcatanese/openapi-postman/tree/main)
 
+Web application that generates a Postman collection (in JSON format) from an OpenAPI file. 
+You can paste the content of the OpenAPI file or enter the URL.
+
+Made with ❤️, [OpenAPI Generator](https://github.com/OpenAPITools/openapi-generator) and [Vaadin](https://vaadin.com/).
+
+![Homepage](homepage.png)
+
 ## Run locally
 
 ```
